@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --blanc: #ffffff;
+    --noir: #000000;
+    --claire-gris: #f8f9fa;
+    --gris: #999999;
+    --fonce-gris: #4a4a4b;
+    --vert:  #a2c0be;
+    --fonce-vert: #567876;
+    --orange: #ff9900;
+    --shadow-img: 10px 10px 0 #a2c0be;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--claire-gris);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    
+}
+    
+header nav ul a {
+    text-decoration: none;
+    color: var(--gris);
+}
+
+.logo {
+    color: var(--noir);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff9900;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;;
+}
+
+header section img {
+    width: 35%;
+}
+
+header section h1 {
+font-weight: lighter;
+font-size: 3rem;
+margin: 0;
+}
+
+header h2 {
+color: var(--gris);
+font-size: 1.3rem;
+font-weight: lighter;
+margin: 0;
+}
+
+main section:not(:first-child) {
+    display:flex;
+    justify-content: space-between;
+    gap: 150px;
+    align-items: center;
+    text-align: right;
+    margin: 100px 0;
+}
+
+.welcome {
+    text-align: center;
+    margin: 65px auto;
+    width: 43%;
+}
+
+.welcome h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 0;
+}
+.welcome p {
+    color: var(--gris);
+    font-weight: lighter;
+    margin: 0;
+}
+
+.card {
+    display: flex;  
+    justify-content: space-between;        
+}
+
+.card img {
+    width: 50%;
+    box-shadow: var(--shadow-img);
+}
+
+.card h3 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.card p {
+    color: var(--gris);
+    margin-bottom: 50px;;
+}
+
+.card div {
+    width: 50%;
+}
+
+main section:nth-child(3) {
+    text-align: left;
+}
+
+.btn {
+    background-color: var(--vert);
+    color: var(--blanc);
+    padding: 12px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+.btn:hover {
+    background-color: var(--noir);
+    transition: all 500ms;
+}
+
+footer {
+    background-color: var(--fonce-gris);
+    color: var(--blanc);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 50px 0;
+}
+
